@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="container">
+    <h3 class="appTitle">
+      Country Information
+    </h3>
+    <hr />
+    <country-form></country-form>
+    <hr />
+    <country-search></country-search>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import CountryForm from "./components/CountryForm.vue";
+import CountrySearch from "./components/CountrySearch.vue";
 
 export default {
-  name: "App",
   components: {
-    HelloWorld
+    CountryForm,
+    CountrySearch
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.appTitle {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
